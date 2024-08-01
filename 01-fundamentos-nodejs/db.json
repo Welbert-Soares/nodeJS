@@ -1,12 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Lucas Fernandes",
-      "email": "Lucas@teste.com"
-    },
-    {
-      "id": 1,
+      "id": "e7c3971c-c94f-414f-9102-8844508c52a9",
       "name": "Lucas Fernandes",
       "email": "Lucas@teste.com"
     }
