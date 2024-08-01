@@ -1,12 +1,6 @@
 
 
-
-type Rotas = {
-  aula: Number,
-}
-
 const capitulo = 5 
-const rotas: Rotas[] = {
+const rotas = {
   "aula": 1,
-  
 }
