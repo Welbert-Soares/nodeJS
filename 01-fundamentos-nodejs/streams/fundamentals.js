@@ -16,13 +16,15 @@ class OneToHundredStream extends Readable {
 
         this.push(buf)
       }
-    }, 1000) 
+    }, 1000)
   }
 }
 
 class InverseNumberStream extends Transform {
   _transform(chunk, encoding, callback) {
-    
+    const transformed = Number(chunk.toString()) * -1
+
+    callback(null, Buffer.from(transformed.toString()))
   }
 }
 
@@ -34,4 +36,5 @@ class MultiplyByTenStream extends Writable {
 }
 
 new OneToHundredStream()
+  .pipe(new InverseNumberStream())
   .pipe(new MultiplyByTenStream())
