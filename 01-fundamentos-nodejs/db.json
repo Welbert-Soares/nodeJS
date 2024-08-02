@@ -1,9 +1,1 @@
-{
-  "users": [
-    {
-      "id": "e7c3971c-c94f-414f-9102-8844508c52a9",
-      "name": "Lucas Fernandes",
-      "email": "Lucas@teste.com"
-    }
-  ]
-}
+{"users":[{"id":"e7c3971c-c94f-414f-9102-8844508c52a9","name":"Lucas Fernandes","email":"Lucas@teste.com"},{"id":"8091a428-cbe3-4b6b-b28a-0536de6988fc","name":"Lucas Fernandes","email":"Lucas@teste.com"}]}
