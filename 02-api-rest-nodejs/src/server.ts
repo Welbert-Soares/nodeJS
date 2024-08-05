@@ -1,13 +1,13 @@
 import fastify from 'fastify'
-import { knex } from './database'
+
 import { env } from './env'
+
+import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
 
-app.get('/hello', async () => {
-  const transation = await knex('transations').where('amount', 5).select('*')
-
-  return transation
+app.register(transactionsRoutes, {
+  prefix: '/transactions',
 })
 
 app
@@ -15,5 +15,5 @@ app
     port: env.PORT,
   })
   .then(() => {
-    console.log('Server running on port 3000')
+    console.log('Server running on port 3333')
   })
